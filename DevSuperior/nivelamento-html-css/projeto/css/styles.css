@@ -1,0 +1,50 @@
+
+* {
+    box-sizing: border-box; /* Faz com que tanto a borda (border) quanto o espaçamento interno (padding) sejam contados como a área do elemento. O tamanho da borda e do espaçamento interno são descontados da caixa do conteúdo. */
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav-container {
+    background-color: #2C3E50;
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+}
+
+.nav-main {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto; /* Centraliza o div em relação ao div pai. Só funciona se estiver especificada uma largura fixa. No caso, o max-width de 960px. */
+    display: flex; /* Faz com que os itens dentro do container fiquem um ao lado do outro. Por padrão os divs são display: block, por isso os itens ficam um abaixo do outro. */
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-main a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu-items {
+    display: flex; /* Faz com que os itens dentro do container fiquem um ao lado do outro. Por padrão os divs são display: block, por isso os itens ficam um abaixo do outro. */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-items li {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.nav-brand {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
